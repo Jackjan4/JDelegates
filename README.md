@@ -12,7 +12,7 @@ public class MyClass {
 
 public void hello(String message)
 {
-  System.out.println(message + ". I got called by a delegate);
+  System.out.println(message + ". I got called by a delegate");
 }
 
 // ...
