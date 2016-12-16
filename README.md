@@ -37,7 +37,7 @@ public class MyClass {
 
 public String hello(String message)
 {
-  return message + ". I got called by a delegate;
+  return message + ". I got called by a delegate";
 }
 
 // ...
