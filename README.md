@@ -17,8 +17,8 @@ public void hello(String message)
 
 // ...
  
-// Create a delegate by giving it the .class reference you are working in, the instance, the method name and the parameter types
-Delegate dele = new Delegate(MyClass.class, this, "hello", String.class);
+// Create a delegate by giving it "this", the method name and the parameter types
+Delegate dele = new Delegate(this, "hello", String.class);
 
 // Now you call the 'hello'-Method by invoking the delegate
 dele.invoke("Hello World");
@@ -42,8 +42,8 @@ public String hello(String message)
 
 // ...
  
-// Create a delegate by giving it the .class reference you are working in, the instance, the method name and the parameter types
-Delegate<String> dele = new Delegate<>(MyClass.class, this, "hello", String.class);
+// Create a delegate by giving it "this", the method name and the parameter types
+Delegate<String> dele = new Delegate<>(this, "hello", String.class);
 
 // Now you call the 'hello'-Method by invoking the delegate
 String s = dele.invoke("Hello World");
