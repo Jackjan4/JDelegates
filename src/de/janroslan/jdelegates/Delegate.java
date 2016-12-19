@@ -13,9 +13,10 @@ public class Delegate<T> {
     private Method m;
     private Object instance;
 
-    public Delegate(Class c, Object instance, String methodName, Class... paramTypes) {
+    public Delegate(Object instance, String methodName, Class... paramTypes) {
         this.instance = instance;
-
+        Class c = instance.getClass();
+        
         try {
             m = c.getDeclaredMethod(methodName, paramTypes);
             m.setAccessible(true);
