@@ -1,6 +1,8 @@
 # JDelegates
 C# delegates  in Java. Very simple and straight forward
 
+# TODO
+Making them easier to use by parsing paramters and class automatically
 
 ## Usage
 
